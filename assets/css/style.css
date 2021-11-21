@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+}
+.menu{
+    padding: 25px 0 25px 0;
+    background-color: #333;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    /* height: 88px; */
+    justify-content: space-between;
+}
+.home{
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
+}
+.link a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 17px;
+}
+.link{
+    padding-right: 15px;
+}
+.capital{
+    /* margin: 25px 20px 0 20px; */
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+}
+.capital-1{
+    width: 50%;
+    /* padding-left: 15px; */
+}
+.capital-1__title{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.capital-1__text-1{
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+.capital-1__text-2{
+    margin-bottom: 20px;
+}
+.text{
+    box-sizing: border-box;
+    /* margin-left: 15px; */
+    /* width: 912px; */
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.card{
+    box-sizing: border-box;
+    border: 5px solid black;
+    height: 100%;
+}
+.cardpad{
+    box-sizing: border-box;
+    flex-basis: 33.33%;
+    margin-bottom: 15px;
+    padding: 0 7.5px 0 0;
+}
+.card__title{
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+    padding: 13px 0 13px 15px;
+    font-size: 20px;
+}
+.card__text{
+    padding: 20px 20px 40px 15px;
+}
+.capital-2{
+    box-sizing: border-box;
+    width: 50%;
+    background-color: #333;
+    border: 5px solid black;
+    /* margin-right: 15px; */
+}
+.capital-2__text{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 30px 0 0 15px;
+}
+
+
+@media (min-width: 2544px) {
+    .cardpad{
+        flex-basis: 25%;
+    }
+}
+@media (max-width: 1912px) {
+    .cardpad{
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 1280px) {
+    .capital-1{
+        width: 100%;
+    }
+    .cardpad{
+        flex-basis: 33.33%;
+    }
+    .capital-2{
+        width: 100%;
+    }
+    .capital{
+        flex-direction: column;
+    }
+    .capital-2__text{
+        padding: 30px 15px 30px 15px;
+    }
+}
+@media (max-width: 964px) {
+    .cardpad{
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 640px) {
+    .cardpad{
+        flex-basis: 100%;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: unset;
+        padding: 25px 0 0 0;
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+    }
+    .link a{
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 15px;
+        border-top: 1px solid silver;
+        width: 100%;
+    }
+    .home{
+        margin-bottom: 25px;
+    }
+}
